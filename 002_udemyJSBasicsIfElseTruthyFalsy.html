@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // 1. Calculate the average for each team given the score for each of three games 
+        teamAverageJohn = (89 + 120 + 103) / 3;
+        teamAverageMike = (116 + 94 + 123) / 3;
+        teamAverageMary = (97 + 134 + 105) / 3;
+
+        // 1. First compare John & Mike's teams only
+            // if (teamAverageJohn > teamAverageMike) {
+            //     console.log (`John's team wins`);
+            // } else if (teamAverageJohn == teamAverageMike) {
+            //     console.log (`It's a tie`);
+            // } else {
+            //     console.log (`Mike's team wins`);
+            // }
+
+        // 2. Then add Mary as a third team into the mix 
+            if (teamAverageJohn > teamAverageMike && teamAverageJohn > teamAverageMary) {
+                console.log (`John's team wins`);
+            } else if (teamAverageMike > teamAverageJohn && teamAverageMike > teamAverageMary) {
+                console.log (`Mike's team wins`);
+            } else if (teamAverageMary > teamAverageJohn && teamAverageMary > teamAverageMike) {
+                console.log (`Mary's team wins`);
+            } 
+            else {
+                console.log (`It's a tie`);
+            }
+    
+    </script>
+</body>
+</html>
